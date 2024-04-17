@@ -17,7 +17,7 @@ class App extends Component {
       return {
         tip:parseFloat(d.tip),
         total_bill:parseFloat(d.total_bill),
-        dat:d.day
+        day:d.day
       }
     }).then(function(csv_data){
       self.setState({data:csv_data})
